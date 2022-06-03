@@ -187,3 +187,5 @@ Multiple Videos
 # Global and Local scope
 
 # Callback, Higher Order Functions
+
+# Math and Date
