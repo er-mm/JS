@@ -181,3 +181,9 @@ Multiple Videos
    math: 3
    }
 2. assign to survey and log
+
+# value vs reference
+
+# Global and Local scope
+
+# Callback, Higher Order Functions
