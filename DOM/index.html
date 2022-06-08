@@ -5,23 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .colors {
+        background: red;
+        color: white;
+      }
+      .text {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+      }
+      .red {
+        background: red;
+        color: white;
+      }
+      .blue {
+        background: blue;
+        color: white;
+      }
+      .cssTitle {
+        background: blue;
+        color: white;
+        font-size: 3rem;
+        text-transform: capitalize;
+      }
+    </style>
   </head>
   <body>
     <h1 id="title">DOM</h1>
-    <div id="generalConcept"></div>
+    <div id="parent">
+      <h1>hello parent</h1>
+      <div class="secondParent">
+        <h2>hello second parent</h2>
+        <h3>sibling to second heading</h3>
+      </div>
+    </div>
 
     <button id="btn">Click Me</button>
 
     <h2>Hello World</h2>
     <h2>hello people</h2>
     <ul id="result">
-      <li class="special">apple</li>
+      <li class="special first">apple</li>
       <li>orange</li>
       <li class="special">banana</li>
       <li>pear</li>
-      <li class="special last">tomato</li>
+      <li class="special last" id="last">tomato</li>
     </ul>
+    <h3 id="special">This is special content</h3>
+    <!-- Methods -->
+    <!--get set attributes-->
+    <ul>
+      <li class="mfirst" id="mspecial">I have a class of first</li>
+      <a href="first.html" id="link">random link</a>
+      <li>I have no attributes</li>
+    </ul>
+    <!--add css classes dynamically-->
+    <h1 id="firstH" class="text">I am first heading</h1>
+    <h1 id="secondH">I am seconf Heading</h1>
+    <h1 id="thirdH">I am third Heading</h1>
+    <!--Adding Elements dynamically-->
+    <div id="addResult">
+      <h1 class="red">I'm the child of addResult</h1>
+    </div>
+    <!--iinnerHTML-->
+    <ul id="innerFirst">
+      <li class="innerItem">list item</li>
+      <li>list item</li>
+    </ul>
+    <div id="innerSecond">i have some text content</div>
+    <!--CSS-->
+    <div class="cssRandom">I am just random div looking for some css</div>
     <!-- Javascript -->
-    <script src="navigateTheDom.js"></script>
+    <script src="methods.js"></script>
   </body>
 </html>
